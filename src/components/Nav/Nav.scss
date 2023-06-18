@@ -1,0 +1,72 @@
+@use "../../colors" as *;
+
+.small-circle {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100px;
+	height: 100px;
+	border-bottom-left-radius: 100%;
+	background-color: $gold;
+	z-index: -1;
+}
+.big-circle {
+	position: absolute;
+	top: -20%;
+	left: -5%;
+	width: 500px;
+	height: 350px;
+	rotate: 40deg;
+	border-radius: 300px;
+	border-top-right-radius: 400px;
+	background-color: $gold;
+}
+.dotted-line {
+	position: absolute;
+	top: 1%;
+	left: 30%;
+	rotate: -40deg;
+	font-size: 10rem;
+	color: $black;
+}
+
+nav {
+	position: fixed;
+	top: 5%;
+	padding-top: 4em;
+	width: 100%;
+	border-top: 2px solid $black;
+	z-index: 100;
+	.nav-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.logo-box {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 0.5em;
+			.logo {
+				font-size: 3rem;
+			}
+			.web-name {
+				font-size: 2.6rem;
+				font-weight: bold;
+			}
+		}
+		.nav-body {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 8em;
+			padding: 1em 10em;
+			background-color: $gold;
+			border-bottom-left-radius: 50px;
+			border-top-left-radius: 5px;
+			.nav-item {
+				font-size: 2rem;
+			}
+		}
+	}
+}

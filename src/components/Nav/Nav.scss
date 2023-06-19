@@ -4,18 +4,18 @@
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 100px;
-	height: 100px;
+	width: 50px;
+	height: 50px;
 	border-bottom-left-radius: 100%;
 	background-color: $gold;
 	z-index: -1;
 }
 .big-circle {
 	position: absolute;
-	top: -20%;
+	top: -3%;
 	left: -5%;
-	width: 500px;
-	height: 350px;
+	width: 200px;
+	height: 150px;
 	rotate: 40deg;
 	border-radius: 300px;
 	border-top-right-radius: 400px;
@@ -23,20 +23,21 @@
 }
 .dotted-line {
 	position: absolute;
-	top: 1%;
-	left: 30%;
+	top: 0;
+	left: 60%;
 	rotate: -40deg;
-	font-size: 10rem;
+	font-size: 7rem;
 	color: $black;
 }
 
-nav {
+.nav {
 	position: fixed;
 	top: 5%;
-	padding-top: 4em;
+	padding: 1em 1em;
 	width: 100%;
 	border-top: 2px solid $black;
 	z-index: 100;
+	transition: all 0.3s;
 	.nav-container {
 		display: flex;
 		justify-content: space-between;
@@ -47,6 +48,7 @@ nav {
 			justify-content: center;
 			align-items: center;
 			gap: 0.5em;
+
 			.logo {
 				font-size: 3rem;
 			}
@@ -55,18 +57,134 @@ nav {
 				font-weight: bold;
 			}
 		}
-		.nav-body {
+		.burger-btn {
+			font-size: 5rem;
+		}
+		.burger-nav-body {
 			display: flex;
-			align-items: center;
+			flex-direction: column;
 			justify-content: center;
-			gap: 8em;
-			padding: 1em 10em;
-			background-color: $gold;
-			border-bottom-left-radius: 50px;
-			border-top-left-radius: 5px;
-			.nav-item {
+			gap: 3em;
+			position: fixed;
+			top: 20%;
+			right: -100%;
+			padding: 1em;
+			width: 45%;
+			height: 60vh;
+			background-color: $white;
+			border: 1px solid $black;
+			border-top-left-radius: 10px;
+			border-bottom-left-radius: 10px;
+			box-shadow: -6px 3px 7px 0px rgba(191, 191, 191, 1);
+			transition: all 0.3s ease;
+			z-index: 1000;
+			.burger-nav-item {
 				font-size: 2rem;
 			}
 		}
+		.open {
+			right: 0;
+		}
+		.nav-body {
+			display: none;
+			
+		}
+	}
+}
+
+.sticky {
+	top: 0;
+	background-color: $white;
+	box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+	z-index: 1000;
+}
+@media (min-width: 414px) {
+	.big-circle {
+		width: 220px;
+		height: 170px;
+		top: -4%;
+	}
+}
+
+@media (min-width: 768px) {
+	.small-circle {
+		width: 60px;
+		height: 60px;
+	}
+	.nav {
+		.nav-container {
+			.burger-btn {
+				display: none;
+			}
+			.burger-nav-body {
+				display: none;
+			}
+
+			.nav-body {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 2em;
+				padding: 1em 6em;
+				background-color: $gold;
+				border-bottom-left-radius: 50px;
+				border-top-left-radius: 5px;
+				.nav-item {
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.small-circle {
+		top: 0;
+		right: 0;
+		width: 100px;
+		height: 100px;
+	}
+	.big-circle {
+		top: -20%;
+		left: -5%;
+		width: 500px;
+		height: 350px;
+		rotate: 40deg;
+	}
+	.dotted-line {
+		top: 1%;
+		left: 30%;
+		font-size: 10rem;
+	}
+
+	.nav {
+		top: 5%;
+		padding-top: 2em;
+		padding-bottom: 2em;
+
+		.nav-container {
+			
+
+			.nav-body {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 8em;
+				padding: 1em 10em;
+				background-color: $gold;
+				border-bottom-left-radius: 50px;
+				border-top-left-radius: 5px;
+				.nav-item {
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+
+	.sticky {
+		top: 0;
+		background-color: $white;
+		box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+		z-index: 1000;
 	}
 }

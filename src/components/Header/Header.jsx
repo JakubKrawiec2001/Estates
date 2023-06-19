@@ -10,7 +10,7 @@ import hero2 from "../../assets/images/hero-img-2.jpg";
 
 const Header = () => {
 	return (
-		<header>
+		<header id="home">
 			<div className="circle"></div>
 			<RxBorderDotted className="header-dotted-line"></RxBorderDotted>
 			<RxDragHandleDots1 className="rectangle-dots"></RxDragHandleDots1>
@@ -39,9 +39,10 @@ const Header = () => {
 							cupiditate hic est voluptatum tempore quae libero, error,
 							consectetur itaque consequuntur impedit cum provident!
 						</p>
-						<button className="btn">
-							<a href="#home">Get Started</a>
-						</button>
+
+						<a href="#home" className="header-btn">
+							Get Started
+						</a>
 					</div>
 					<div className="header-r">
 						<img src={hero1} alt="" className="header-img" />

@@ -39,7 +39,7 @@ const Nav = () => {
 			<nav className={stickyNav}>
 				<div className="wrapper">
 					<div className="nav-container">
-						<a href="#home" className="logo-box">
+						<a href="#" className="logo-box">
 							<SiHomebridge className="logo"></SiHomebridge>
 							<p className="web-name">Homefort</p>
 						</a>
@@ -53,32 +53,40 @@ const Nav = () => {
 								onClick={() => handleOpenNav()}></AiOutlineClose>
 						)}
 						<ul className={!open ? "burger-nav-body" : "burger-nav-body open"}>
-							<li className="burger-nav-item" onClick={() => setOpen(false)}>
-								<a href="#home">Home</a>
-							</li>
-							<li className="burger-nav-item" onClick={() => setOpen(false)}>
-								<a href="#about">About Us</a>
-							</li>
-							<li className="burger-nav-item" onClick={() => setOpen(false)}>
-								<a href="#service">Service</a>
-							</li>
-							<li className="burger-nav-item" onClick={() => setOpen(false)}>
-								<a href="#contact">Contact</a>
-							</li>
+							<a href="#">
+								<li className="burger-nav-item" onClick={() => setOpen(false)}>
+									Home
+								</li>
+							</a>
+							<a href="#about">
+								<li className="burger-nav-item" onClick={() => setOpen(false)}>
+									About Us
+								</li>
+							</a>
+							<a href="#service">
+								<li className="burger-nav-item" onClick={() => setOpen(false)}>
+									Service
+								</li>
+							</a>
+							<a href="#contact">
+								<li className="burger-nav-item" onClick={() => setOpen(false)}>
+									Contact
+								</li>
+							</a>
 						</ul>
 						<ul className="nav-body">
-							<li className="nav-item">
-								<a href="#home">Home</a>
-							</li>
-							<li className="nav-item">
-								<a href="#about">About Us</a>
-							</li>
-							<li className="nav-item">
-								<a href="#service">Service</a>
-							</li>
-							<li className="nav-item">
-								<a href="#contact">Contact</a>
-							</li>
+							<a href="#">
+								<li className="nav-item">Home</li>
+							</a>
+							<a href="#about">
+								<li className="nav-item">About Us</li>
+							</a>
+							<a href="#service">
+								<li className="nav-item">Service</li>
+							</a>
+							<a href="#contact">
+								<li className="nav-item">Contact</li>
+							</a>
 						</ul>
 					</div>
 				</div>

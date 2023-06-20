@@ -33,3 +33,12 @@ p {
 	width: 100%;
 	margin: 0 auto;
 }
+
+.section-heading {
+	font-size: 4rem;
+	color: $gold;
+	.section-heading-span {
+		font-size: 5rem;
+		color: $black;
+	}
+}

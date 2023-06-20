@@ -10,7 +10,7 @@ import hero2 from "../../assets/images/hero-img-2.jpg";
 
 const Header = () => {
 	return (
-		<header id="home">
+		<header>
 			<div className="circle"></div>
 			<RxBorderDotted className="header-dotted-line"></RxBorderDotted>
 			<RxDragHandleDots1 className="rectangle-dots"></RxDragHandleDots1>

@@ -33,12 +33,39 @@ p {
 	width: 100%;
 	margin: 0 auto;
 }
-
 .section-heading {
-	font-size: 4rem;
+	font-size: 2rem;
 	color: $gold;
 	.section-heading-span {
-		font-size: 5rem;
+		font-size: 3rem;
 		color: $black;
+	}
+}
+
+@media (min-width: 768px) {
+	.section-heading {
+		font-size: 3rem;
+		.section-heading-span {
+			font-size: 3.7rem;
+		}
+	}
+}
+@media (min-width: 992px) {
+	.section-heading {
+		font-size: 3.4rem;
+		.section-heading-span {
+			font-size: 4.4rem;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.section-heading {
+		font-size: 4rem;
+		
+		.section-heading-span {
+			font-size: 5rem;
+			
+		}
 	}
 }

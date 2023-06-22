@@ -1,0 +1,99 @@
+@use "../../colors" as *;
+
+.service {
+	margin-top: 5em;
+	.service-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		.service-l {
+			padding: 1em;
+			.service-text {
+				font-size: 1.2rem;
+				padding-top: 1em;
+			}
+		}
+		.service-r {
+            margin-top: 4em;
+			.service-img-container {
+				background-image: url("../../assets/images/service-img.jpg");
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				width: 30rem;
+				height: 40rem;
+				border-top-left-radius: 300px;
+				border-top-right-radius: 300px;
+				border: 10px solid $gold;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.service {
+		.service-container {
+			flex-direction: row;
+			gap: 1em;
+
+			.service-l {
+				width: 50%;
+				.service-text {
+					font-size: 1.2rem;
+				}
+			}
+			.service-r {
+				.service-img-container {
+					width: 40rem;
+					height: 55rem;
+				}
+			}
+		}
+	}
+}
+@media (min-width: 992px) {
+	.service {
+		.service-container {
+			flex-direction: row;
+			gap: 1em;
+
+			.service-l {
+				width: 50%;
+				.service-text {
+					font-size: 1.6rem;
+				}
+			}
+            .service-r {
+				.service-img-container {
+                    width: 40rem;
+                    height: 55rem;
+                }
+			}
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.service {
+		margin-top: 10em;
+		.service-container {
+			.service-l {
+				margin-top: 5em;
+				width: 50%;
+				.service-text {
+					font-size: 2rem;
+					padding-top: 1.6em;
+				}
+				.service-text:nth-child(3) {
+					padding-top: 1em;
+				}
+			}
+			.service-r {
+				.service-img-container {
+                    width: 55rem;
+                    height: 70rem;
+                }
+			}
+		}
+	}
+}

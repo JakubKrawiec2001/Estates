@@ -9,7 +9,7 @@ import { RxLapTimer } from "react-icons/rx";
 
 const About = () => {
 	return (
-		<section className="about">
+		<section className="about" id="about">
 			<div className="wrapper">
 				<div className="about-container">
 					<div className="about-l">

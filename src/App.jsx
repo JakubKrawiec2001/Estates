@@ -1,8 +1,9 @@
 import "./App.scss";
 import About from "./components/About/About";
-import Header from "./components/Header/Header";
 import Nav from "./components/Nav/Nav";
+import Header from "./components/Header/Header";
 import Service from "./components/Service/Service";
+import Questions from "./components/Questions/Questions";
 
 function App() {
 	return (
@@ -11,6 +12,8 @@ function App() {
 			<Header></Header>
 			<About></About>
 			<Service></Service>
+			<Questions></Questions>
+
 			<br />
 			<br />
 			<br />

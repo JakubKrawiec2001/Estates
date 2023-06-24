@@ -3,15 +3,15 @@ import "./Service.scss";
 
 const Service = () => {
 	return (
-		<section className="service">
+		<section className="service" id="service">
 			<div className="wrapper">
 				<div className="service-container">
 					<div className="service-l">
 						<h2 className="section-heading">
-							How we build
-							<div className="section-heading-span">
+							How we build<br></br>
+							<span className="section-heading-span">
 								Check how our houses are built
-							</div>
+							</span>
 						</h2>
 						<p className="service-text">
 							Our houses are made of prefabricated elements produced in the

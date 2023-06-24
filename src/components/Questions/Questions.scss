@@ -1,0 +1,72 @@
+@use "../../colors" as *;
+.questions {
+	position: relative;
+	margin-top: 20em;
+	background-image: url("../../assets/images/questions-bg.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 40vh;
+
+	.bg-shadow {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba($gold, 0.9);
+		z-index: 0;
+	}
+	.questions-container {
+		height: 40vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 5em;
+		.questions-img {
+			margin-bottom: 9em;
+			width: 20%;
+			z-index: 1;
+		}
+		.questions-text-box {
+			z-index: 1;
+
+			.questions-text {
+				font-size: 2rem;
+			}
+			.questions-text:nth-child(1) {
+				font-size: 4rem;
+				font-weight: bold;
+			}
+			.questions-phone-box {
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				gap: 1em;
+				margin-top: 0.5em;
+				input {
+					padding: 1em;
+					width: 50%;
+					border-radius: 50px;
+					border: 1px solid $black;
+				}
+				.questions-btn {
+					font-size: 3rem;
+					padding: 0.2em 1em;
+					border-radius: 50px;
+					border: 1px solid $black;
+					background-color: $black;
+					color: $white;
+					cursor: pointer;
+					transition: all 0.3s ease;
+				}
+				.questions-btn:hover {
+					background-color: $white;
+					color: $black;
+				}
+			}
+		}
+	}
+}

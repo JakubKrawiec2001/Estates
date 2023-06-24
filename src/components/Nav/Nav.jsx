@@ -68,6 +68,11 @@ const Nav = () => {
 									Service
 								</li>
 							</a>
+							<a href="#service">
+								<li className="burger-nav-item" onClick={() => setOpen(false)}>
+									Service
+								</li>
+							</a>
 							<a href="#contact">
 								<li className="burger-nav-item" onClick={() => setOpen(false)}>
 									Contact

@@ -7,6 +7,7 @@
 		flex-direction: column;
 		justify-content: space-around;
 		align-items: center;
+
 		.service-l {
 			padding: 1em;
 			.service-text {
@@ -15,7 +16,7 @@
 			}
 		}
 		.service-r {
-            margin-top: 4em;
+			margin-top: 4em;
 			.service-img-container {
 				background-image: url("../../assets/images/service-img.jpg");
 				background-position: center;
@@ -64,11 +65,11 @@
 					font-size: 1.6rem;
 				}
 			}
-            .service-r {
+			.service-r {
 				.service-img-container {
-                    width: 40rem;
-                    height: 55rem;
-                }
+					width: 40rem;
+					height: 55rem;
+				}
 			}
 		}
 	}
@@ -90,9 +91,9 @@
 			}
 			.service-r {
 				.service-img-container {
-                    width: 55rem;
-                    height: 70rem;
-                }
+					width: 55rem;
+					height: 70rem;
+				}
 			}
 		}
 	}

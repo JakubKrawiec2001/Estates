@@ -5,9 +5,11 @@ footer {
 	background-color: $black;
 	.footer-container {
 		display: flex;
+		flex-direction: column;
+		align-items: center;
 		justify-content: center;
-		gap: 10em;
-		padding: 6em 0;
+		gap: 5em;
+		padding: 3em 0;
 
 		.footer-logo {
 			font-size: 4rem;
@@ -15,17 +17,30 @@ footer {
 		}
 
 		.footer-box {
+			text-align: center;
+
 			.footer-text {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 0.5em;
 				padding: 0.5em 0;
-				font-size: 2rem;
+				font-size: 1rem;
 				color: $white;
+				cursor: pointer;
+				transition: all 0.3s ease;
+			}
+
+			.footer-text:hover {
+				color: $gold;
+				scale: 1.1;
 			}
 		}
 		.footer-social-box {
+			text-align: center;
 			.footer-social-icon {
-				margin-top: 0.2em;
-				margin-right: 0.3em;
-				font-size: 4rem;
+				margin: 0.4em 0.2em 0 0.2em;
+				font-size: 3rem;
 				color: $white;
 				cursor: pointer;
 				transition: all 0.3s ease;
@@ -38,52 +53,70 @@ footer {
 	}
 }
 .footer-box-title {
+	font-size: 1.6rem;
 	color: $gold;
-	font-size: 2.2rem;
 }
 
+@media (min-width: 414px) {
+	footer {
+		.footer-container {
+			.footer-box {
+				.footer-text {
+					font-size: 1.3rem;
+				}
+			}
+		}
+	}
+	.footer-box-title {
+		font-size: 2rem;
+	}
+}
+
+@media (min-width: 768px) {
+	footer {
+		.footer-container {
+			.footer-box {
+				.footer-text {
+					font-size: 1.7rem;
+				}
+			}
+		}
+	}
+	.footer-box-title {
+		font-size: 2.4rem;
+	}
+}
 
 @media (min-width: 1200px) {
-    footer {
-        margin-top: 5em;
-        background-color: $black;
-        .footer-container {
-            display: flex;
-            justify-content: space-around;
-            padding: 6em 0;
-            
-    
-            .footer-logo {
-                font-size: 4rem;
-                color: $gold;
-            }
-    
-            .footer-box {
-                .footer-text {
-                    padding: 0.5em 0;
-                    font-size: 2rem;
-                    color: $white;
-                }
-            }
-            .footer-social-box {
-                .footer-social-icon {
-                    margin-top: 0.2em;
-                    margin-right: 0.3em;
-                    font-size: 4rem;
-                    color: $white;
-                    cursor: pointer;
-                    transition: all 0.3s ease;
-                }
-                .footer-social-icon:hover {
-                    color: $gold;
-                    scale: 1.1;
-                }
-            }
-        }
-    }
-    .footer-box-title {
-        color: $gold;
-        font-size: 2.2rem;
-    }
-    
+	footer {
+		margin-top: 5em;
+		background-color: $black;
+		.footer-container {
+			flex-direction: row;
+			align-items: flex-start;
+			justify-content: space-around;
+			padding: 6em 0;
+
+			.footer-logo {
+				font-size: 4rem;
+			}
+
+			.footer-box {
+				text-align: left;
+				.footer-text {
+					justify-content: flex-start;
+					font-size: 2rem;
+				}
+			}
+			.footer-social-box {
+				text-align: left;
+				.footer-social-icon {
+					font-size: 4rem;
+				}
+			}
+		}
+	}
+	.footer-box-title {
+		font-size: 2.2rem;
+	}
 }

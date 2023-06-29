@@ -9,7 +9,7 @@ import { MdBorderClear } from "react-icons/md";
 
 const Projects = () => {
 	return (
-		<section className="projects">
+		<section className="projects" id="projects">
 			<div className="wrapper">
 				<h2 className="section-heading center-heading">
 					Modular house designs

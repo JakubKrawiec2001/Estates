@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import Service from "./components/Service/Service";
 import Questions from "./components/Questions/Questions";
 import Projects from "./components/Projects/Projects";
+import Footer from "./components/Footer/Footer";
 
 function App() {
 	return (
@@ -15,27 +16,7 @@ function App() {
 			<Service></Service>
 			<Questions></Questions>
 			<Projects></Projects>
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
+			<Footer></Footer>
 		</div>
 	);
 }

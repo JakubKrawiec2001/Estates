@@ -41,7 +41,9 @@ const Contact = () => {
 							<textarea
 								className="contact-textarea"
 								placeholder="Message"></textarea>
-							<button className="contact-btn">Send</button>
+							<button className="contact-btn" onClick={(e) => e.preventDefault}>
+								Send
+							</button>
 						</form>
 					</div>
 				</div>

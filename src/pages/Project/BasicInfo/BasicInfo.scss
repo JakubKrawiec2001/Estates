@@ -1,0 +1,23 @@
+@use "../../../colors" as *;
+
+.basic-info {
+	display: flex;
+	justify-content: space-around;
+	margin: 15em 0;
+	padding: 4em 0;
+	box-shadow: 0 0 20px 5px rgb(0 0 0 / 10%);
+	border-radius: 10px;
+	.basic-info-box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.8em;
+		.basic-info-icon {
+			font-size: 6rem;
+			color: $gold;
+		}
+		.basic-info-text {
+			font-size: 2rem;
+		}
+	}
+}

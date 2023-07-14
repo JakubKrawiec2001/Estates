@@ -1,9 +1,26 @@
 import project1 from "../assets/images/projects/projects-1.jpg";
+import project1Two from "../assets/images/projects/projects-1-2.jpg";
+import project1Three from "../assets/images/projects/projects-1-3.jpg";
+
 import project2 from "../assets/images/projects/projects-2.jpg";
+import project2Two from "../assets/images/projects/projects-2-2.jpg";
+import project2Three from "../assets/images/projects/projects-2-3.jpg";
+
 import project3 from "../assets/images/projects/projects-3.jpg";
+import project3Two from "../assets/images/projects/projects-3-2.jpg";
+import project3Three from "../assets/images/projects/projects-3-3.jpg";
+
 import project4 from "../assets/images/projects/projects-4.jpg";
+import project4Two from "../assets/images/projects/projects-4-2.jpg";
+import project4Three from "../assets/images/projects/projects-4-3.jpg";
+
 import project5 from "../assets/images/projects/projects-5.jpg";
+import project5Two from "../assets/images/projects/projects-5-2.jpg";
+import project5Three from "../assets/images/projects/projects-5-3.jpg";
+
 import project6 from "../assets/images/projects/projects-6.jpg";
+import project6Two from "../assets/images/projects/projects-6-2.jpg";
+import project6Three from "../assets/images/projects/projects-6-3.jpg";
 
 const projects = [
 	{
@@ -16,6 +33,8 @@ const projects = [
 		description:
 			"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus aspernatur quis quibusdam quo nobis et. Nobis natus earum officia fuga.",
 		image: project1,
+		imageTwo: project1Two,
+		imageThree: project1Three,
 	},
 	{
 		id: 2,
@@ -27,6 +46,8 @@ const projects = [
 		description:
 			"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus aspernatur quis quibusdam quo nobis et. Nobis natus earum officia fuga.",
 		image: project2,
+		imageTwo: project2Two,
+		imageThree: project2Three,
 	},
 	{
 		id: 3,
@@ -38,6 +59,8 @@ const projects = [
 		description:
 			"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus aspernatur quis quibusdam quo nobis et. Nobis natus earum officia fuga.",
 		image: project3,
+		imageTwo: project3Two,
+		imageThree: project3Three,
 	},
 	{
 		id: 4,
@@ -49,6 +72,8 @@ const projects = [
 		description:
 			"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus aspernatur quis quibusdam quo nobis et. Nobis natus earum officia fuga.",
 		image: project4,
+		imageTwo: project4Two,
+		imageThree: project4Three,
 	},
 	{
 		id: 5,
@@ -60,6 +85,8 @@ const projects = [
 		description:
 			"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus aspernatur quis quibusdam quo nobis et. Nobis natus earum officia fuga.",
 		image: project5,
+		imageTwo: project5Two,
+		imageThree: project5Three,
 	},
 	{
 		id: 6,
@@ -71,6 +98,8 @@ const projects = [
 		description:
 			"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus aspernatur quis quibusdam quo nobis et. Nobis natus earum officia fuga.",
 		image: project6,
+		imageTwo: project6Two,
+		imageThree: project6Three,
 	},
 ];
 

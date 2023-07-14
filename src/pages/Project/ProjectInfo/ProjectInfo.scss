@@ -1,0 +1,25 @@
+@use "../../../colors" as *;
+
+.project-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 5em;
+	margin-bottom: 20em;
+
+	.project-info-text-box {
+		width: 50%;
+		.project-info-heading {
+			font-size: 3rem;
+			color: $gold;
+		}
+		.project-info-text {
+			padding: 1em 0;
+			font-size: 2rem;
+		}
+	}
+	.project-info-img {
+		width: 35%;
+		mix-blend-mode: darken;
+	}
+}

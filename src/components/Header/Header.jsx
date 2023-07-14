@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.scss";
+import { HashLink as Link } from "react-router-hash-link";
 
 // ICONS
 import { RxBorderDotted, RxDragHandleDots1 } from "react-icons/rx";
@@ -40,9 +41,9 @@ const Header = () => {
 							consectetur itaque consequuntur impedit cum provident!
 						</p>
 
-						<a href="#home" className="header-btn">
+						<Link to="/#projects" className="header-btn">
 							Get Started
-						</a>
+						</Link>
 					</div>
 					<div className="header-r">
 						<img src={hero1} alt="" className="header-img" />

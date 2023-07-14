@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "./Nav.scss";
+import { HashLink as Link } from "react-router-hash-link";
 
 // ICONS
 import { SiHomebridge } from "react-icons/si";
 import { RxBorderDotted } from "react-icons/rx";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
+
 
 const Nav = () => {
 	const [stickyNav, setStickyNav] = useState("nav");
@@ -39,10 +41,10 @@ const Nav = () => {
 			<nav className={stickyNav}>
 				<div className="wrapper">
 					<div className="nav-container">
-						<a href="#" className="logo-box">
+						<Link to="/#" className="logo-box">
 							<SiHomebridge className="logo"></SiHomebridge>
 							<p className="web-name">Homefort</p>
-						</a>
+						</Link>
 						{!open ? (
 							<BiMenuAltRight
 								className="burger-btn"
@@ -53,53 +55,53 @@ const Nav = () => {
 								onClick={() => handleOpenNav()}></AiOutlineClose>
 						)}
 						<ul className={!open ? "burger-nav-body" : "burger-nav-body open"}>
-							<a href="#">
+							<Link to="/#">
 								<li className="burger-nav-item" onClick={() => setOpen(false)}>
 									Home
 								</li>
-							</a>
-							<a href="#about">
+							</Link>
+							<Link to="/#about">
 								<li className="burger-nav-item" onClick={() => setOpen(false)}>
 									About Us
 								</li>
-							</a>
-							<a href="#service">
+							</Link>
+							<Link to="/#service">
 								<li className="burger-nav-item" onClick={() => setOpen(false)}>
 									Service
 								</li>
-							</a>
-							<a href="#service">
+							</Link>
+							<Link to="/#service">
 								<li className="burger-nav-item" onClick={() => setOpen(false)}>
 									Service
 								</li>
-							</a>
-							<a href="#projects">
+							</Link>
+							<Link to="/#projects">
 								<li className="burger-nav-item" onClick={() => setOpen(false)}>
 									Projects
 								</li>
-							</a>
-							<a href="#contact">
+							</Link>
+							<Link to="/#contact">
 								<li className="burger-nav-item" onClick={() => setOpen(false)}>
 									Contact
 								</li>
-							</a>
+							</Link>
 						</ul>
 						<ul className="nav-body">
-							<a href="#">
+							<Link to="/#">
 								<li className="nav-item">Home</li>
-							</a>
-							<a href="#about">
+							</Link>
+							<Link to="/#about">
 								<li className="nav-item">About Us</li>
-							</a>
-							<a href="#service">
+							</Link>
+							<Link to="/#service">
 								<li className="nav-item">Service</li>
-							</a>
-							<a href="#projects">
+							</Link>
+							<Link to="/#projects">
 								<li className="nav-item">Projects</li>
-							</a>
-							<a href="#contact">
+							</Link>
+							<Link to="/#contact">
 								<li className="nav-item">Contact</li>
-							</a>
+							</Link>
 						</ul>
 					</div>
 				</div>

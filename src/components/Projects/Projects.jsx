@@ -1,13 +1,14 @@
 import React from "react";
 import "./Projects.scss";
 import projects from "../../data/projects";
+import { Link } from "react-router-dom";
 
 // ICONS
 import { FaBed } from "react-icons/fa";
 import { AiFillCalculator } from "react-icons/ai";
 import { MdBorderClear } from "react-icons/md";
 
-const Projects = () => {
+const Projects = ({ handleSelectProject }) => {
 	return (
 		<section className="projects" id="projects">
 			<div className="wrapper">
@@ -21,8 +22,12 @@ const Projects = () => {
 				<div className="projects-container">
 					{projects.map((project) => {
 						return (
-							<div className="project-box">
-								<img src={project.image} alt="" className="project-img"/>
+							<Link
+								to="/project"
+								className="project-box"
+								key={project.id}
+								onClick={() => handleSelectProject(project)}>
+								<img src={project.image} alt="" className="project-img" />
 								<span className="project-name">{project.name}</span>
 								<span className="project-price">${project.price}</span>
 								<span className="project-description">
@@ -55,7 +60,7 @@ const Projects = () => {
 										</span>
 									</div>
 								</div>
-							</div>
+							</Link>
 						);
 					})}
 				</div>

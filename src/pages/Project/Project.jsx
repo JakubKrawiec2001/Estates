@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Project.scss";
 
 // ICONS
@@ -6,6 +6,7 @@ import { Navigate } from "react-router-dom";
 import { AiFillCalculator } from "react-icons/ai";
 import { MdBorderClear } from "react-icons/md";
 import { FaBed } from "react-icons/fa";
+import { AiOutlineClose } from "react-icons/ai";
 
 // IMAGES
 import contactImg from "../../assets/images/contact-img.jpg";
@@ -13,6 +14,18 @@ import BasicInfo from "./BasicInfo/BasicInfo";
 import ProjectInfo from "./ProjectInfo/ProjectInfo";
 
 const Project = ({ selectedProject }) => {
+	const [showImage, setShowImage] = useState("");
+	const [popupImage, setPopupImage] = useState(false);
+
+	const resizeImage = (image) => {
+		setShowImage(image);
+		if (!popupImage) {
+			setPopupImage(true);
+		} else {
+			setPopupImage(false);
+		}
+	};
+
 	return (
 		<section className="project-page">
 			{selectedProject.length === 0 ? (
@@ -26,6 +39,13 @@ const Project = ({ selectedProject }) => {
 							Check out our modular house designs
 						</span>
 					</h2>
+					<div
+						className={
+							!popupImage ? "popup-img-box" : "popup-img-box open-popup-img-box"
+						}>
+						<AiOutlineClose className="popup-close-icon" onClick={() => setPopupImage(false)}></AiOutlineClose>
+						<img src={showImage} alt="" className="popup-img" />
+					</div>
 					<div className="project-page-container">
 						{selectedProject.map((project) => {
 							return (
@@ -35,16 +55,19 @@ const Project = ({ selectedProject }) => {
 											src={project.image}
 											alt=""
 											className="project-page-img"
+											onClick={() => resizeImage(project.image)}
 										/>
 										<img
 											src={project.imageTwo}
 											alt=""
 											className="project-page-img"
+											onClick={() => resizeImage(project.imageTwo)}
 										/>
 										<img
 											src={project.imageThree}
 											alt=""
 											className="project-page-img"
+											onClick={() => resizeImage(project.imageThree)}
 										/>
 									</div>
 									<div className="project-page-description-box">

@@ -42,8 +42,9 @@ const Project = ({ selectedProject }) => {
 					<div
 						className={
 							!popupImage ? "popup-img-box" : "popup-img-box open-popup-img-box"
-						}>
-						<AiOutlineClose className="popup-close-icon" onClick={() => setPopupImage(false)}></AiOutlineClose>
+						}
+						onClick={() => setPopupImage(false)}>
+						<AiOutlineClose className="popup-close-icon"></AiOutlineClose>
 						<img src={showImage} alt="" className="popup-img" />
 					</div>
 					<div className="project-page-container">

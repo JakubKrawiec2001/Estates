@@ -3,10 +3,10 @@
 .project-page-box-text {
 	text-align: center;
 	padding-bottom: 0.5em;
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 }
 .project-page {
-	margin-top: 25em;
+	margin-top: 20em;
 	.popup-img-box {
 		display: none;
 		justify-content: center;
@@ -20,12 +20,12 @@
 		height: 100vh;
 		background-color: rgba(0, 0, 0, 0.845);
 		z-index: 1000;
-		
+
 		.popup-close-icon {
 			position: absolute;
 			top: 3%;
 			left: 2%;
-			font-size: 6rem;
+			font-size: 4rem;
 			color: $white;
 			cursor: pointer;
 			transition: all 0.3s ease;
@@ -34,7 +34,9 @@
 			color: $gold;
 		}
 		.popup-img {
-			width: 60%;
+			width: 90%;
+			border-radius: 10px;
+			border: 3px solid $gold;
 		}
 	}
 	.open-popup-img-box {
@@ -42,14 +44,14 @@
 	}
 
 	.project-page-container {
-		margin-top: 5em;
+		margin-top: 3em;
 
 		.project-page-img-box {
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr;
 			grid-template-rows: 1fr 1fr;
-			gap: 0.5em;
-
+			gap: 0.2em;
+			padding: 1em;
 			.project-page-img {
 				width: 100%;
 				border-radius: 10px;
@@ -62,21 +64,21 @@
 		}
 		.project-page-description-box {
 			display: flex;
-			margin-top: 3em;
+			flex-direction: column;
+			gap: 3em;
+			margin-top: 2em;
 
 			.project-page-name-box {
-				flex: 1;
-				border-right: 3px solid #ddd;
 				.project-page-name {
 					text-align: center;
 					font-weight: bold;
-					font-size: 2.4rem;
+					font-size: 1.8rem;
 				}
 				.project-page-size-box {
 					display: flex;
 					justify-content: center;
 					align-items: center;
-					gap: 3em;
+					gap: 2em;
 					margin-top: 1em;
 					.project-page-size-box-item {
 						text-align: center;
@@ -85,23 +87,19 @@
 							justify-content: center;
 							align-items: center;
 							gap: 0.5em;
-							font-size: 1.6rem;
+							font-size: 1.3rem;
 						}
 					}
 				}
 			}
 			.project-page-price-box {
-				flex: 1;
-				border-right: 3px solid #ddd;
 				.project-page-price {
 					text-align: center;
 					font-weight: bold;
-					font-size: 3rem;
+					font-size: 1.8rem;
 				}
 			}
 			.project-page-contact-box {
-				flex: 1;
-
 				.project-page-contact-phone-box {
 					display: flex;
 					align-items: center;
@@ -111,12 +109,12 @@
 					.project-page-contact-phone {
 						position: relative;
 						font-weight: bold;
-						font-size: 3rem;
+						font-size: 1.8rem;
 					}
 					.project-page-contact-phone::after {
 						position: absolute;
-						bottom: -25%;
-						left: -10%;
+						bottom: -50%;
+						left: -15%;
 						width: 20px;
 						height: 20px;
 						border-radius: 100%;
@@ -125,9 +123,99 @@
 						content: "";
 					}
 					.project-page-contact-phone-img {
-						width: 10%;
+						width: 15%;
 						aspect-ratio: 1/1;
 						border-radius: 50%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.project-page-box-text {
+		font-size: 1rem;
+	}
+	.project-page {
+		.project-page-container {
+			.project-page-description-box {
+				flex-direction: row;
+				gap: 0;
+				.project-page-name-box {
+					padding: 0 1em;
+					flex: 1;
+					border-right: 3px solid #ddd;
+				}
+				.project-page-price-box {
+					flex: 1;
+					border-right: 3px solid #ddd;
+				}
+				.project-page-contact-box {
+					flex: 1;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.project-page-box-text {
+		font-size: 1.6rem;
+	}
+	.project-page {
+		margin-top: 25em;
+		.popup-img-box {
+			.popup-close-icon {
+				font-size: 6rem;
+			}
+
+			.popup-img {
+				width: 60%;
+			}
+		}
+
+		.project-page-container {
+			margin-top: 5em;
+
+			.project-page-img-box {
+				gap: 0.5em;
+				padding: 0;
+			}
+			.project-page-description-box {
+				margin-top: 3em;
+
+				.project-page-name-box {
+					.project-page-name {
+						font-size: 2.4rem;
+					}
+					.project-page-size-box {
+						gap: 3em;
+
+						.project-page-size-box-item {
+							.project-page-size-box-item-content {
+								font-size: 1.6rem;
+							}
+						}
+					}
+				}
+				.project-page-price-box {
+					.project-page-price {
+						font-size: 3rem;
+					}
+				}
+				.project-page-contact-box {
+					.project-page-contact-phone-box {
+						.project-page-contact-phone {
+							font-size: 3rem;
+						}
+						.project-page-contact-phone::after {
+							bottom: -25%;
+							left: -10%;
+						}
+						.project-page-contact-phone-img {
+							width: 10%;
+						}
 					}
 				}
 			}

@@ -3,8 +3,9 @@
 .basic-info {
 	display: flex;
 	justify-content: space-around;
-	margin: 15em 0;
-	padding: 4em 0;
+	gap: 0.5em;
+	margin: 5em 0;
+	padding: 2em 0.5em;
 	box-shadow: 0 0 20px 5px rgb(0 0 0 / 10%);
 	border-radius: 10px;
 	.basic-info-box {
@@ -13,11 +14,42 @@
 		align-items: center;
 		gap: 0.8em;
 		.basic-info-icon {
-			font-size: 6rem;
+			font-size: 3rem;
 			color: $gold;
 		}
 		.basic-info-text {
-			font-size: 2rem;
+			text-align: center;
+			font-size: 1rem;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.basic-info {
+		margin: 8em 0;
+		.basic-info-box {
+			.basic-info-icon {
+				font-size: 4rem;
+			}
+			.basic-info-text {
+				font-size: 1.6rem;
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.basic-info {
+		margin: 15em 0;
+		padding: 4em 0;
+
+		.basic-info-box {
+			.basic-info-icon {
+				font-size: 6rem;
+			}
+			.basic-info-text {
+				font-size: 2rem;
+			}
 		}
 	}
 }

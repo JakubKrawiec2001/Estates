@@ -2,24 +2,65 @@
 
 .project-info {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 	gap: 5em;
-	margin-bottom: 20em;
+	margin-bottom: 10em;
 
 	.project-info-text-box {
-		width: 50%;
 		.project-info-heading {
-			font-size: 3rem;
+			text-align: center;
+			font-size: 2rem;
 			color: $gold;
 		}
 		.project-info-text {
-			padding: 1em 0;
-			font-size: 2rem;
+			padding: 1em 0.5em;
+			text-align: center;
+			font-size: 1.4rem;
 		}
 	}
 	.project-info-img {
-		width: 35%;
+		width: 80%;
 		mix-blend-mode: darken;
+	}
+}
+
+@media (min-width: 768px) {
+	.project-info {
+		.project-info-text-box {
+			.project-info-heading {
+				font-size: 2.4rem;
+			}
+			.project-info-text {
+				font-size: 1.6rem;
+			}
+		}
+		.project-info-img {
+			width: 60%;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.project-info {
+		flex-direction: row;
+		margin-bottom: 20em;
+
+		.project-info-text-box {
+			width: 50%;
+			.project-info-heading {
+				text-align: left;
+				font-size: 3rem;
+			}
+			.project-info-text {
+				text-align: left;
+				padding: 1em 0;
+				font-size: 2rem;
+			}
+		}
+		.project-info-img {
+			width: 35%;
+		}
 	}
 }

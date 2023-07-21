@@ -418,8 +418,10 @@ header {
 		}
 
 		.header-container {
+			
 			.header-l {
-				padding: 0 0 0 1em;
+				padding: 0 0 0 10em;
+				z-index: 100;
 				.header-btn {
 					margin-top: 1.6em;
 				}

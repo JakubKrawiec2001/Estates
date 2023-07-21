@@ -47,6 +47,12 @@ p {
 	text-align: center;
 }
 
+@media (max-width: 1400px) {
+	.wrapper {
+		max-width: 1200px;
+	}
+}
+
 @media (min-width: 768px) {
 	.section-heading {
 		font-size: 3rem;

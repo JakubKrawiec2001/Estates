@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.scss";
+import { HashLink as Link } from "react-router-hash-link";
 
 // ICONS
 import { SiHomebridge } from "react-icons/si";
@@ -19,11 +20,21 @@ const Footer = () => {
 					<SiHomebridge className="footer-logo"></SiHomebridge>
 					<div className="footer-box">
 						<p className="footer-box-title">Contents</p>
-						<p className="footer-text">Home</p>
-						<p className="footer-text">About Us</p>
-						<p className="footer-text">Service</p>
-						<p className="footer-text">Projects</p>
-						<p className="footer-text">Contact</p>
+						<Link to="/#" className="footer-text">
+							Home
+						</Link>
+						<Link to="/#about" className="footer-text">
+							About Us
+						</Link>
+						<Link to="/#service" className="footer-text">
+							Service
+						</Link>
+						<Link to="/#projects" className="footer-text">
+							Projects
+						</Link>
+						<Link to="/#contact" className="footer-text">
+							Contact
+						</Link>
 					</div>
 					<div className="footer-box">
 						<p className="footer-box-title">Contact</p>
@@ -37,11 +48,12 @@ const Footer = () => {
 							<GrMail></GrMail> homefort@office.com
 						</p>
 						<p className="footer-text">
-							<MdLocationOn></MdLocationOn>250-200 10th Ave N, Nashville, TN 37203, United States
+							<MdLocationOn></MdLocationOn>250-200 10th Ave N, Nashville, TN
+							37203, United States
 						</p>
 					</div>
 					<div className="footer-social-box">
-                        <p className="footer-box-title">Follow Us</p>
+						<p className="footer-box-title">Follow Us</p>
 						<AiFillInstagram className="footer-social-icon"></AiFillInstagram>
 						<AiFillFacebook className="footer-social-icon"></AiFillFacebook>
 						<AiFillTwitterCircle className="footer-social-icon"></AiFillTwitterCircle>

@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.scss";
 
+
 // ICONS
 import { BsShieldFillCheck } from "react-icons/bs";
 import { ImUserCheck } from "react-icons/im";

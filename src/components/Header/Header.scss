@@ -178,17 +178,60 @@ header {
 		}
 	}
 }
-
-@media (min-width: 414px) {
+@media (min-width: 412px) {
 	header {
+		.circle {
+			bottom: 23%;
+		}
+		.header-dotted-line {
+			bottom: 25%;
+			right: 10%;
+		}
+		.bars-l {
+			bottom: 35%;
+		}
 		.line {
-			bottom: 3%;
+			bottom: 23%;
 		}
 		.header-container {
 			.header-r {
 				.header-img {
 					width: 250px;
 					height: 250px;
+				}
+				.header-img:nth-child(1) {
+					bottom: 20%;
+				}
+				.header-img:nth-child(2) {
+					bottom: 28%;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 414px) {
+	header {
+		.circle {
+			bottom: 3%;
+		}
+		.header-dotted-line {
+			bottom: 6%;
+			right: 15%;
+		}
+		.bars-l {
+			bottom: 25%;
+		}
+		.line {
+			bottom: 3%;
+		}
+		.header-container {
+			.header-r {
+				.header-img:nth-child(1) {
+					bottom: 0;
+				}
+				.header-img:nth-child(2) {
+					bottom: 10%;
 				}
 			}
 		}

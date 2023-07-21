@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "./Nav.scss";
 import { HashLink as Link } from "react-router-hash-link";
+import { motion } from "framer-motion";
 
 // ICONS
 import { SiHomebridge } from "react-icons/si";
 import { RxBorderDotted } from "react-icons/rx";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
-
 
 const Nav = () => {
 	const [stickyNav, setStickyNav] = useState("nav");
@@ -40,7 +40,11 @@ const Nav = () => {
 			<RxBorderDotted className="dotted-line"></RxBorderDotted>
 			<nav className={stickyNav}>
 				<div className="wrapper">
-					<div className="nav-container">
+					<motion.div
+						className="nav-container"
+						initial={{ opacity: 0, y: -100 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{ duration: 1 }}>
 						<Link to="/#" className="logo-box">
 							<SiHomebridge className="logo"></SiHomebridge>
 							<p className="web-name">Homefort</p>
@@ -103,7 +107,7 @@ const Nav = () => {
 								<li className="nav-item">Contact</li>
 							</Link>
 						</ul>
-					</div>
+					</motion.div>
 				</div>
 			</nav>
 		</>

@@ -28,7 +28,7 @@ const Header = () => {
 				<span></span>
 				<span></span>
 			</div>
-			<div className="line"></div>
+			{/* <div className="line"></div> */}
 			<div className="wrapper">
 				<div className="header-container">
 					<div className="header-l">

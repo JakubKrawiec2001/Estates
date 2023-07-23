@@ -1,5 +1,7 @@
 @use "../../colors" as *;
 header {
+	border-bottom: 2px solid $gold;
+
 	.circle {
 		position: absolute;
 		bottom: -13%;
@@ -10,6 +12,7 @@ header {
 		border-bottom-right-radius: 300px;
 		border-bottom-left-radius: 300px;
 		background-color: $black;
+		z-index: -1;
 	}
 	.header-dotted-line {
 		position: absolute;

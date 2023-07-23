@@ -128,7 +128,7 @@ header {
 			position: relative;
 			width: 100%;
 			height: 40vh;
-			
+
 			.header-img {
 				position: absolute;
 				width: 200px;
@@ -216,20 +216,56 @@ header {
 	}
 }
 
+@media (min-width: 640px) {
+	header {
+		.circle {
+			bottom: 14%;
+		}
+		.header-dotted-line {
+			bottom: 16%;
+			right: 10%;
+			font-size: 6rem;
+		}
+		.bars-l {
+			bottom: 25%;
+			left: -3%;
+		}
+		.line {
+			bottom: 10%;
+		}
+		.header-container {
+			.header-r {
+				.header-img {
+					width: 350px;
+					height: 350px;
+				}
+				.header-img:nth-child(1) {
+					bottom: 0;
+				}
+				.header-img:nth-child(2) {
+					bottom: 10%;
+				}
+			}
+		}
+	}
+}
+
 @media (min-width: 768px) {
 	header {
 		.circle {
-			bottom: 5%;
+			bottom: -10%;
 			right: 5%;
 			width: 250px;
 			height: 150px;
 		}
 		.header-dotted-line {
+			bottom: -8%;
 			right: 10%;
-			font-size: 10rem;
+			font-size: 8rem;
 		}
 		.bars-l {
 			left: -5%;
+			bottom: 10%;
 			gap: 1.4em;
 			width: 150px;
 			height: 100px;
@@ -241,7 +277,7 @@ header {
 			height: 100px;
 		}
 		.line {
-			bottom: 3%;
+			bottom: -8%;
 		}
 		.header-container {
 			.header-l {
@@ -259,6 +295,8 @@ header {
 				}
 			}
 			.header-r {
+				height: 50vh;
+
 				.header-img {
 					width: 400px;
 					height: 400px;
@@ -267,56 +305,39 @@ header {
 					bottom: 0;
 				}
 				.header-img:nth-child(2) {
-					bottom: 10%;
+					bottom: 15%;
 				}
 			}
 		}
 	}
 }
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
 	header {
 		.circle {
-			position: absolute;
-			bottom: 12%;
-			right: 5%;
+			bottom: -30%;
+			right: 2%;
 			width: 400px;
 			height: 200px;
-			rotate: 40deg;
-			border-bottom-right-radius: 300px;
-			border-bottom-left-radius: 300px;
-			background-color: $black;
 		}
 		.header-dotted-line {
-			position: absolute;
-			bottom: 12%;
-			right: 15%;
-			rotate: -40deg;
-			font-size: 15rem;
-			color: $gold;
+			bottom: -28%;
+			right: 8%;
+			font-size: 10rem;
 		}
-
+		.bars-l {
+			bottom: -5%;
+		}
 		.rectangle-dots {
-			position: absolute;
 			top: 15%;
 			left: 70%;
-			rotate: 90deg;
+
 			font-size: 15rem;
-			color: $black;
 		}
 
 		.line {
-			position: absolute;
-			bottom: 5%;
-			width: 100%;
-			height: 2px;
-			background-color: $gold;
-			z-index: 10;
+			bottom: -10%;
 		}
 		.header-container {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-
 			.header-l {
 				margin-top: 5em;
 
@@ -331,7 +352,7 @@ header {
 				}
 				.header-btn {
 					display: inline-block;
-					margin-top: 2em;
+					margin-top: 1em;
 					padding: 0.2em 1em;
 					font-size: 4rem;
 					border-radius: 50px;
@@ -354,32 +375,30 @@ header {
 				}
 
 				.header-img:nth-child(1) {
-					right: 30%;
-					bottom: 1%;
+					right: 20%;
+					bottom: 4%;
 					border: 10px solid $white;
-					z-index: 1;
 				}
 				.header-img:nth-child(2) {
-					right: 10%;
-					bottom: 18%;
-					z-index: 0;
+					right: 3%;
+					bottom: 30%;
 				}
 			}
 		}
 	}
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
 	header {
 		.circle {
-			bottom: 2%;
+			bottom: 10%;
 			right: -2%;
-			width: 600px;
-			height: 350px;
+			width: 250px;
+			height: 150px;
 		}
 		.header-dotted-line {
-			bottom: 10%;
-			right: 10%;
+			bottom: 12%;
+			right: 2%;
 		}
 
 		.rectangle-dots {
@@ -387,9 +406,16 @@ header {
 		}
 
 		.bars-l {
-			left: -2%;
-			bottom: 8%;
+			left: -5%;
+			bottom: 0;
 			width: 150px;
+		}
+		.bars-r {
+			right: -6%;
+			rotate: 15deg;
+		}
+		.line {
+			bottom: 0;
 		}
 
 		.header-container {
@@ -426,10 +452,68 @@ header {
 	}
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1536px) {
 	header {
+		.circle {
+			right: 3%;
+			width: 350px;
+			height: 200px;
+		}
 		.header-dotted-line {
 			bottom: 15%;
+			right: 8%;
+		}
+
+		.rectangle-dots {
+			top: 15%;
+			left: 40%;
+		}
+
+		.bars-r {
+			right: -3%;
+			bottom: 50%;
+			width: 150px;
+			rotate: 30deg;
+		}
+		.bars-l {
+			bottom: 20%;
+		}
+		.line {
+			bottom: 10%;
+		}
+
+		.header-container {
+			.header-l {
+				padding: 0;
+			}
+			.header-r {
+				.header-img {
+					width: 600px;
+					height: 600px;
+				}
+				.header-img:nth-child(1) {
+					right: 25%;
+					bottom: 0;
+				}
+				.header-img:nth-child(2) {
+					right: -5%;
+					bottom: 15%;
+				}
+			}
+		}
+	}
+}
+@media (min-width: 1920px) {
+	header {
+		.circle {
+			right: 5%;
+			width: 350px;
+			height: 200px;
+		}
+		.header-dotted-line {
+			bottom: 18%;
+			right: 12%;
+			font-size: 12rem;
 		}
 
 		.rectangle-dots {
@@ -444,7 +528,11 @@ header {
 			rotate: 30deg;
 		}
 		.bars-l {
+			left: -2%;
 			bottom: 20%;
+		}
+		.line {
+			bottom: 12%;
 		}
 
 		.header-container {
@@ -455,6 +543,14 @@ header {
 				.header-img {
 					width: 600px;
 					height: 600px;
+				}
+				.header-img:nth-child(1) {
+					right: 25%;
+					bottom: 0;
+				}
+				.header-img:nth-child(2) {
+					right: -5%;
+					bottom: 15%;
 				}
 			}
 		}

@@ -133,6 +133,22 @@
 	}
 }
 
+@media (min-width: 640px) {
+	.project-page {
+		.project-page-container {
+			.project-page-description-box {
+				.project-page-contact-box {
+					.project-page-contact-phone-box {
+						.project-page-contact-phone-img {
+							width: 8%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 @media (min-width: 768px) {
 	.project-page-box-text {
 		font-size: 1rem;
@@ -159,7 +175,7 @@
 	}
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
 	.project-page-box-text {
 		font-size: 1.6rem;
 	}
@@ -180,7 +196,7 @@
 
 			.project-page-img-box {
 				gap: 0.5em;
-				padding: 0;
+				padding: 1em;
 			}
 			.project-page-description-box {
 				margin-top: 3em;
@@ -218,6 +234,16 @@
 						}
 					}
 				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1536px) {
+	.project-page {
+		.project-page-container {
+			.project-page-img-box {
+				padding: 0;
 			}
 		}
 	}

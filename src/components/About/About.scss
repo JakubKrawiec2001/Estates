@@ -90,6 +90,17 @@
 		}
 	}
 }
+@media (min-width: 640px) {
+	.about {
+		.about-container {
+			.about-r {
+				.features-box {
+					gap: 3em;
+				}
+			}
+		}
+	}
+}
 @media (min-width: 768px) {
 	.about {
 		.about-container {
@@ -121,7 +132,6 @@
 }
 @media (min-width: 992px) {
 	.about {
-		margin-top: 60em;
 		.about-container {
 			gap: 0;
 			padding: 0;
@@ -155,7 +165,7 @@
 }
 @media (min-width: 1200px) {
 	.about {
-		margin-top: 30em;
+		margin-top: 10em;
 		.about-container {
 			.about-l {
 				.about-img-container {

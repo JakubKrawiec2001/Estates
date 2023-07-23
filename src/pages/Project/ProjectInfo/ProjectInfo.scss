@@ -42,9 +42,10 @@
 	}
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
 	.project-info {
 		flex-direction: row;
+		justify-content: space-around;
 		margin-bottom: 20em;
 
 		.project-info-text-box {
@@ -62,5 +63,10 @@
 		.project-info-img {
 			width: 35%;
 		}
+	}
+}
+@media (min-width: 1536px) {
+	.project-info {
+		justify-content: space-between;
 	}
 }

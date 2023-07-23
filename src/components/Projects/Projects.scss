@@ -108,6 +108,18 @@
 	}
 }
 
+@media (min-width: 640px) {
+	.projects {
+		.projects-container {
+			.project-box {
+				.project-name {
+					bottom: 6.2em;
+				}
+			}
+		}
+	}
+}
+
 @media (min-width: 768px) {
 	.projects {
 		.projects-container {
@@ -139,7 +151,7 @@
 	}
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
 	.projects {
 		.projects-container {
 			margin-top: 10em;
@@ -148,7 +160,7 @@
 				min-height: 40vh;
 
 				.project-name {
-					bottom: 5.2em;
+					bottom: 6.8em;
 					font-size: 2.6rem;
 				}
 				.project-price {
@@ -169,6 +181,17 @@
 							font-size: 1.4rem;
 						}
 					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 1536px) {
+	.projects {
+		.projects-container {
+			.project-box {
+				.project-name {
+					bottom: 5.4em;
 				}
 			}
 		}

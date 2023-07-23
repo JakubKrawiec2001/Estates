@@ -37,17 +37,11 @@
 		.service-container {
 			flex-direction: row;
 			gap: 1em;
-
+			padding: 1em;
 			.service-l {
 				width: 50%;
 				.service-text {
 					font-size: 1.2rem;
-				}
-			}
-			.service-r {
-				.service-img-container {
-					width: 40rem;
-					height: 55rem;
 				}
 			}
 		}
@@ -78,7 +72,10 @@
 	.service {
 		margin-top: 10em;
 		.service-container {
+			padding: 0;
+			gap: 0;
 			.service-l {
+				padding: 0;
 				margin-top: 5em;
 				width: 50%;
 				.service-text {

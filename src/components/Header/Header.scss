@@ -182,17 +182,17 @@ header {
 @media (min-width: 412px) {
 	header {
 		.circle {
-			bottom: 23%;
+			bottom: 15%;
 		}
 		.header-dotted-line {
-			bottom: 25%;
-			right: 10%;
+			bottom: 18%;
+			right: 13%;
 		}
 		.bars-l {
 			bottom: 35%;
 		}
 		.line {
-			bottom: 23%;
+			bottom: 16%;
 		}
 		.header-container {
 			.header-r {
@@ -201,10 +201,10 @@ header {
 					height: 250px;
 				}
 				.header-img:nth-child(1) {
-					bottom: 20%;
+					bottom: 13%;
 				}
 				.header-img:nth-child(2) {
-					bottom: 28%;
+					bottom: 22%;
 				}
 			}
 		}
@@ -238,6 +238,8 @@ header {
 		}
 	}
 }
+
+
 
 @media (min-width: 768px) {
 	header {
@@ -403,11 +405,9 @@ header {
 		.header-dotted-line {
 			bottom: 10%;
 			right: 10%;
-			
 		}
 
 		.rectangle-dots {
-			
 			left: 40%;
 		}
 
@@ -418,10 +418,10 @@ header {
 		}
 
 		.header-container {
-			
 			.header-l {
 				padding: 0 0 0 10em;
 				z-index: 100;
+
 				.header-btn {
 					margin-top: 1.6em;
 				}

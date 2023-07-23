@@ -401,7 +401,6 @@ header {
 				}
 			}
 			.header-r {
-				
 				.header-img {
 					position: absolute;
 					width: 500px;
@@ -450,16 +449,17 @@ header {
 			rotate: 15deg;
 		}
 		.line {
-			bottom: 0;
+			bottom: 10%;
 		}
 
 		.header-container {
 			flex-direction: row;
-
+			height: 70vh;
 			.header-l {
 				padding: 0 0 0 10em;
 				z-index: 100;
 				width: 50%;
+				margin: 0;
 				.header-text {
 					width: 100%;
 				}
@@ -469,7 +469,7 @@ header {
 			}
 			.header-r {
 				margin-top: 2em;
-				height: 70vh;
+
 				.header-img {
 					width: 400px;
 					height: 400px;
@@ -528,11 +528,11 @@ header {
 				}
 				.header-img:nth-child(1) {
 					right: 25%;
-					bottom: 0;
+					bottom: -30%;
 				}
 				.header-img:nth-child(2) {
 					right: -5%;
-					bottom: 15%;
+					bottom: 0;
 				}
 			}
 		}
@@ -581,11 +581,11 @@ header {
 				}
 				.header-img:nth-child(1) {
 					right: 25%;
-					bottom: 0;
+					bottom: -25%;
 				}
 				.header-img:nth-child(2) {
 					right: -5%;
-					bottom: 15%;
+					bottom: 0;
 				}
 			}
 		}

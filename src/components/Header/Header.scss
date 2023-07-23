@@ -182,25 +182,8 @@ header {
 
 @media (min-width: 412px) {
 	header {
-		.circle {
-			bottom: 15%;
-		}
-		.header-dotted-line {
-			bottom: 18%;
-			right: 13%;
-		}
-		.bars-l {
-			bottom: 35%;
-		}
-		.line {
-			bottom: 16%;
-		}
 		.header-container {
 			.header-r {
-				position: relative;
-				width: 100%;
-				height: 40vh;
-
 				.header-img {
 					width: 250px;
 					height: 250px;
@@ -219,20 +202,23 @@ header {
 @media (min-width: 414px) {
 	header {
 		.circle {
-			bottom: 10%;
+			bottom: 5%;
 		}
 		.header-dotted-line {
-			bottom: 12%;
+			bottom: 6%;
 			right: 12%;
 		}
 		.bars-l {
 			bottom: 25%;
 		}
 		.line {
-			bottom: 10%;
+			bottom: 5%;
 		}
 		.header-container {
 			.header-r {
+				position: relative;
+				width: 100%;
+				height: 40vh;
 				.header-img:nth-child(1) {
 					bottom: 0;
 				}

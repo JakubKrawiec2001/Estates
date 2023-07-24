@@ -3,9 +3,6 @@ import "./Header.scss";
 import { HashLink as Link } from "react-router-hash-link";
 import { motion } from "framer-motion";
 
-// ICONS
-import { RxBorderDotted, RxDragHandleDots1 } from "react-icons/rx";
-
 // IMAGES
 import hero1 from "../../assets/images/hero-img-1.jpg";
 import hero2 from "../../assets/images/hero-img-2.jpg";
@@ -13,9 +10,6 @@ import hero2 from "../../assets/images/hero-img-2.jpg";
 const Header = () => {
 	return (
 		<header>
-			<div className="circle"></div>
-			<RxBorderDotted className="header-dotted-line"></RxBorderDotted>
-			<RxDragHandleDots1 className="rectangle-dots"></RxDragHandleDots1>
 			<div className="bars-r">
 				<span></span>
 				<span></span>
@@ -28,7 +22,7 @@ const Header = () => {
 				<span></span>
 				<span></span>
 			</div>
-			{/* <div className="line"></div> */}
+			<div className="line"></div>
 			<div className="wrapper">
 				<div className="header-container">
 					<div className="header-l">

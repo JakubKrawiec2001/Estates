@@ -396,7 +396,7 @@ header {
 			height: 100px;
 		}
 		.bars-r {
-			bottom: 40%;
+			bottom: 60%;
 			right: -3%;
 			width: 200px;
 			height: 100px;
@@ -410,9 +410,26 @@ header {
 
 @media (min-width: 2000px) {
 	header {
+		height: 85vh;
+
+		.bars-l {
+			left: -2%;
+			width: 300px;
+			height: 120px;
+		}
+		.bars-r {
+			bottom: 65%;
+			width: 300px;
+			height: 120px;
+		}
+		.line {
+			bottom: 13%;
+		}
 		.header-container {
+			gap: 10em;
 			.header-l {
-				margin-top: 18em;
+				padding: 0;
+
 				.header-heading {
 					font-size: 10rem;
 				}
@@ -421,12 +438,15 @@ header {
 				}
 			}
 			.header-r {
+				.header-img {
+					width: 70%;
+				}
 				.header-img:nth-child(1) {
-					bottom: 10%;
+					bottom: 18%;
 				}
 				.header-img:nth-child(2) {
+					right: 0;
 					bottom: 30%;
-					right: 15%;
 				}
 			}
 		}

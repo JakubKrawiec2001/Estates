@@ -150,7 +150,17 @@
 		}
 	}
 }
-
+@media (min-width: 1200px) {
+	.projects {
+		.projects-container {
+			.project-box {
+				.project-name {
+					bottom: 5.5em;
+				}
+			}
+		}
+	}
+}
 @media (min-width: 1280px) {
 	.projects {
 		.projects-container {
@@ -181,6 +191,28 @@
 							font-size: 1.4rem;
 						}
 					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 1360px) {
+	.projects {
+		.projects-container {
+			.project-box {
+				.project-name {
+					bottom: 6em;
+				}
+			}
+		}
+	}
+}
+@media (min-width: 1410px) {
+	.projects {
+		.projects-container {
+			.project-box {
+				.project-name {
+					bottom: 5.5em;
 				}
 			}
 		}

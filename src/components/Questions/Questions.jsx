@@ -11,7 +11,7 @@ const Questions = () => {
 				<div className="bg-shadow"></div>
 				<div className="wrapper">
 					<div className="questions-container">
-						<img src={questionImg} alt="" className="questions-img" />
+						<img src={questionImg} alt="Image of advisor" className="questions-img" />
 						<div className="questions-text-box">
 							<p className="questions-text">Don't know where to start?</p>
 							<p className="questions-text">

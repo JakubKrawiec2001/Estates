@@ -45,7 +45,7 @@ const Project = ({ selectedProject }) => {
 						}
 						onClick={() => setPopupImage(false)}>
 						<AiOutlineClose className="popup-close-icon"></AiOutlineClose>
-						<img src={showImage} alt="" className="popup-img" />
+						<img src={showImage} alt="Image of house" className="popup-img" />
 					</div>
 					<div className="project-page-container">
 						{selectedProject.map((project) => {
@@ -54,19 +54,19 @@ const Project = ({ selectedProject }) => {
 									<div className="project-page-img-box">
 										<img
 											src={project.image}
-											alt=""
+											alt="Image of house"
 											className="project-page-img"
 											onClick={() => resizeImage(project.image)}
 										/>
 										<img
 											src={project.imageTwo}
-											alt=""
+											alt="Image of house"
 											className="project-page-img"
 											onClick={() => resizeImage(project.imageTwo)}
 										/>
 										<img
 											src={project.imageThree}
-											alt=""
+											alt="Image of house"
 											className="project-page-img"
 											onClick={() => resizeImage(project.imageThree)}
 										/>
@@ -111,7 +111,7 @@ const Project = ({ selectedProject }) => {
 											<div className="project-page-contact-phone-box">
 												<img
 													src={contactImg}
-													alt=""
+													alt="Image of a man"
 													className="project-page-contact-phone-img"
 												/>
 												<p className="project-page-contact-phone">

@@ -60,7 +60,7 @@ const Header = () => {
 					<div className="header-r">
 						<motion.img
 							src={hero1}
-							alt=""
+							alt="Hero image of house"
 							className="header-img"
 							initial={{ opacity: 0, x: 100 }}
 							animate={{ opacity: 1, x: 0 }}
@@ -68,7 +68,7 @@ const Header = () => {
 						/>
 						<motion.img
 							src={hero2}
-							alt=""
+							alt="Hero image of house"
 							className="header-img"
 							initial={{ opacity: 0, x: 100 }}
 							animate={{ opacity: 1, x: 0 }}

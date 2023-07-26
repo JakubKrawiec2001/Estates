@@ -27,7 +27,7 @@ const Projects = ({ handleSelectProject }) => {
 								className="project-box"
 								key={project.id}
 								onClick={() => handleSelectProject(project)}>
-								<img src={project.image} alt="" className="project-img" />
+								<img src={project.image} alt="Image of house" className="project-img" />
 								<span className="project-name">{project.name}</span>
 								<span className="project-price">${project.price}</span>
 								<span className="project-description">

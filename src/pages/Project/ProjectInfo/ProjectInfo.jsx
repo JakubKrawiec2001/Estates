@@ -34,7 +34,7 @@ const ProjectInfo = () => {
 					paint, putty, sockets.
 				</p>
 			</div>
-			<img src={projectInfoImg} alt="" className="project-info-img" />
+			<img src={projectInfoImg} alt="Image of a house design" className="project-info-img" />
 		</div>
 	);
 };

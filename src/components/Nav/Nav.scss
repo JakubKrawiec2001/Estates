@@ -61,7 +61,7 @@
 			font-size: 5rem;
 		}
 		.burger-nav-body {
-			display: none;
+			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
@@ -76,14 +76,18 @@
 			transition: all 0.3s ease;
 			z-index: 1000;
 			overflow: hidden;
-
+			visibility: hidden;
+			box-shadow: 3px -5px 45px -18px rgba(132, 132, 132, 1);
 			.burger-nav-item {
+				position: relative;
 				font-size: 2rem;
+				font-weight: bold;
 			}
 		}
+
 		.open {
-			display: flex;
-			height: fit-content;
+			visibility: visible;
+			height: 50vh;
 		}
 		.nav-body {
 			display: none;
@@ -96,6 +100,16 @@
 	background-color: $white;
 	box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 	z-index: 1000;
+}
+
+@media (min-width: 375px) {
+	.nav {
+		.nav-container {
+			.burger-nav-body {
+				gap: 3em;
+			}
+		}
+	}
 }
 @media (min-width: 414px) {
 	.big-circle {

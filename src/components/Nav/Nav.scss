@@ -61,29 +61,29 @@
 			font-size: 5rem;
 		}
 		.burger-nav-body {
-			display: flex;
+			display: none;
 			flex-direction: column;
 			justify-content: center;
-			gap: 3em;
+			align-items: center;
+			gap: 2em;
 			position: fixed;
-			top: 20%;
-			right: -100%;
+			bottom: 0;
+			left: 0;
 			padding: 1em;
-			width: 45%;
-			height: 60vh;
-			background-color: $white;
-			border: 1px solid $black;
-			border-top-left-radius: 10px;
-			border-bottom-left-radius: 10px;
-			box-shadow: -6px 3px 7px 0px rgba(191, 191, 191, 1);
+			width: 100%;
+			height: 0;
+			background-color: $gold;
 			transition: all 0.3s ease;
 			z-index: 1000;
+			overflow: hidden;
+
 			.burger-nav-item {
 				font-size: 2rem;
 			}
 		}
 		.open {
-			right: 0;
+			display: flex;
+			height: fit-content;
 		}
 		.nav-body {
 			display: none;
@@ -131,7 +131,6 @@
 				.nav-item {
 					position: relative;
 					font-size: 1.6rem;
-					
 				}
 				.nav-item::before {
 					content: "";
@@ -141,7 +140,6 @@
 					width: 0;
 					background-color: $black;
 					transition: all 0.3s ease;
-					
 				}
 				.nav-item:hover::before {
 					width: 100%;
